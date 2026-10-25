@@ -10,6 +10,9 @@ python -m pytest -q          # unit tests for the engine
 streamlit run app.py
 ```
 
+https://web-page-ranking.streamlit.app/
+
+
 ## Mathematics (column-stochastic convention)
 - `A[i,j] = 1` if page *j* links to page *i* (row = target, column = source). Duplicate links are ignored; self-links allowed.
 - `P[:,j] = A[:,j] / outdegree(j)`. A dangling column (no outlinks) is replaced by `1/N` in every entry.
